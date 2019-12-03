@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.App-actions {
+  min-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-filter {
+  margin-right: 1em;
+}
+
+.App-filter__input {
+  width: 250px;
+  padding: 0.4em 0.6em;
+  background: lightgray;
+  border:none;
+  font-size: 0.5em;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.App-filter__input:focus {
+  background: white;
+}
+
+.App-add-name {
+  margin-left: 1em;
+}
+
+.btn {
+  padding: 0.4em 0.6em;
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 0.5em;
+  position: relative;
+  border-radius: 0.1em;
+  cursor: pointer;
+  transition: 400ms transform ease-in-out;
+}
+
+.btn--primary {
+  background: #09d3ac;
+  color: white;
+  box-shadow: 0 -4px -4px rgba(0,0,0,0.4), 0 -8px -8px rgba(0,0,0,0.4);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-0.2em);
+}
+
+.App-name {
+  min-width: 80%;
+  margin: 1em auto;
+  font-size: 16px;
+}
+
+.App-name__list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.App-name__item {
+  margin-bottom: 0.1em;
+  padding: 0.5em 0;
+  list-style: none;
+  border: 1px solid #09d3ac;
+  border-radius: 0.1em;
+  transition: background-color 400ms ease-in-out;
+  cursor: pointer;
+}
+.App-name__item:hover {
+  background: #09d3ac;
+}
+
+.App-name__item--transition-enter {
+  background-color: #09d3ac;
+  opacity: 0.01;
+  transform: translateY(-1em);
+}
+.App-name__item--transition-enter.App-name__item--transition-enter-active {
+  opacity: 1;
+  background-color: transparent;
+  transform: translateY(0);
+  transition: all 500ms ease-in;
+}
+.App-name__item--transition-leave {
+  background-color: transparent;
+  opacity: 1;
+  transform: translateY(-1em);
+}
+.App-name__item--transition-leave.App-name__item--transition-leave-active {
+  opacity: 0.01;
+  background-color: #09d3ac;
+  transform: translateY(0);
+  transition: all 300ms ease-in;
+}
